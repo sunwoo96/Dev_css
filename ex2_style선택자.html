@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            .text{ color:green;}
+            #gagaga{ color:orange;}
+            h2, h3{
+                color:purple;
+            }
+            h4{ color:orange;}
+            h4{ color:blue;} /*색갈이 겹침으로 우선순위는 뒤에있는 색갈이 표시된다
+            .text클래스를 다른색으로 지정해주면 우선순위는 클래스 선택자가 우선이다.*/
+        </style>
+    </head>
+    <body>
+     <h1 class="text">제목을 나타낸다!</h1>
+     <h2> 부제목이 나타난다!</h2>
+     <h3> 소제목이 나타난다!</h3>
+     <h4> 소소제목이 나타난다!</h4>
+
+     <p id="gagaga">문단을 표시한다 가가가</p>
+     <p class="text">문단을 표시한다 나나나</p>
+     <p>문단을 표시한다 다다다</p>
+    </body>
+</html>

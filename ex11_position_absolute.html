@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            div{
+                width: 200px; height: 200px;
+                background-color: yellow;
+                position: relative;
+                border: 1px solid black;
+            }
+            .abs{
+                width: 100px; height: 100px;
+                background-color: red;
+                position: absolute;
+                /*absolute는 문서의 흐름에서 제외되고 상위 요소중에서 
+                포지션을 정의하는 가장가까운 오프셋(포지션 요소)을 기준으로 위치를 잡는다*/
+                top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div>
+        <div class="abs"></div>
+        <p>pppppp</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            [class*="te"]{ /* *은 te라는 문자열을 포함할때 $는 te로 끝날때*/
+                color:blue;
+            }
+            [id^="uni"]{ /*^는 ~으로 시작할때*/
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>선택자 연습하기</h1>
+        <p>1번 문단입니다 그냥 태그</p>
+        <p class="text">2번 문단입니다 클래스 있음</p>
+        <p id="unique">3번 문단입니다 아이디 있음</p>
+        <p class="text">4번 문단입니다 클래스 있음</p>
+        <p>5번 문단입니다 <span>스판 있는</span> 태그</p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 50px; height: 50px;
+                background-color: blue; color: white;
+            }
+            .box:nth-child(2n-1){
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </body>
+</html>

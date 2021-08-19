@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+             /*
+            first-line marker placeholder before after
+            */
+            input::placeholder{
+                font-size: 24px;
+                color: black;
+            }
+            p::before{
+                content: "앞에다 추가한 텍스트 ";
+                color: red; font-weight: 900;
+            }
+            p::after{
+                content: " 뒤에다 추가한 텍스트 ";
+                color: yellowgreen; font-weight: 100;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="아무거나 쓰세요!">
+        <p>원래 쓰여 있던 내용</p>
+    </body>
+</html>
